@@ -1,16 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3238BC30-74E4-401B-B82C-456E4B9FF8A1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{05D1F137-3E06-4E33-B747-21B684D27530}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AngularFilters", "src\AngularFilters\AngularFilters.xproj", "{833D9513-CB3B-4755-ABC5-ECF496E1189E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularFilters", "src\AngularFilters\AngularFilters.csproj", "{833D9513-CB3B-4755-ABC5-ECF496E1189E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,5 +25,8 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{833D9513-CB3B-4755-ABC5-ECF496E1189E} = {3238BC30-74E4-401B-B82C-456E4B9FF8A1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E883D4A1-4B95-4C37-984D-394D42E608CE}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html ng-app="Filters">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/jquery/dist/jquery.js"></script>
+</head>
+
+<body ng-controller="ProductController as controller">
+
+    <table>
+        <tr ng-repeat="product in controller.productArray|filter: {name: search}">
+        <!--<tr ng-repeat="product in controller.productArray|startsWith{'sm''}">-->
+            <td>{{product.name}}</td>
+            <td>{{product.price|currency}}</td>
+            <td>{{product.expDate|date: 'fullDate'}}</td>
+        </tr>
+
+    </table>
+
+    <br />
+    <hr />
+    <ul>
+        <li ng-repeat="item in controller.productArray|startsWith:'gr'">
+            {{item}}}
+        </li>
+    </ul>
+
+    <script src="ngApp/app.js"></script>
+</body>
+
+</html>

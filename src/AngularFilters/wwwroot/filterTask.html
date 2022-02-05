@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<!--SETUP: add  ng-directive to the module-->
+<html ng-app="modMain">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Index</title>
+
+    <!--SETUP: add script reference to angular.js-->
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="ngApp/filterTask.js"></script>
+</head>
+
+<!--SETUP: ng-directive for controller-->
+<body ng-controller="ctiController as ctrl">
+
+    <ul>
+        <li>
+            CTRL: {{ctrl}}
+        </li>
+        <li>
+            CTRL.ITEMS: {{ctrl.aryItems}}
+        </li>
+        <li>
+            CTRL.ITEMS|FILTER: {{ctrl.aryItems|fltUnique}}
+        </li>
+    </ul>
+    <br />
+
+    <ul>
+        <li ng-repeat="item in ctrl.aryItems|fltUnique">
+            {{item}}
+        </li>
+    </ul>
+    <br />
+
+    {{ctrl.aryItems.length}}
+
+    <!--SETUP: add script reference to module.js-->
+
+</body>
+
+</html>
